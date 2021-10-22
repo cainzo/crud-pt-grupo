@@ -1,0 +1,44 @@
+.colorNavbar{
+    background: rgba(24, 23, 23, 0.767);
+    backdrop-filter: blur(5px);
+}
+.letraChica{
+    font-size: 12px;
+}
+.logo{
+    font-size: 15px;
+}
+.claseLinksFooter{
+    text-decoration: none;
+}  
+.linea-footer{
+    
+    height: 50%;
+}
+.botonToggler{
+    border: 0px;
+}
+.botonToggler:focus{
+    box-shadow: none;
+}
+
+@media all and (max-width: 991px){
+    .logo{
+        margin-right:40%;
+    }
+  
+    
+}
+
+@media all and (max-width: 576px){
+    .logo{
+        font-size: 15px;
+        margin-right:35%;
+
+    }
+  
+    .botonToggler{
+        margin: 0px;
+        padding: 0px;
+    }
+}
