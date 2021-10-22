@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <header>
+        <nav
+          class="
+            letraChica
+            navbar navbar-expand-lg navbar-dark
+            colorNavbar
+            fixed-top
+            py-0
+          "
+          id="navbar"
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler mx-1 botonToggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand logo text-white-50" href="#">TP GRUPAL N2</a>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link mx-5" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+                <a class="nav-link mx-5" href="/admin.html">Administracion</a>
+                <a class="nav-link mx-5" href="/404.html">Sobre Nosotros</a>
+                <a class="nav-link  mx-5" id="linkRegistro" href="/registro.html">Registro</a>
+                <a class="nav-link active mx-5" id="linkPerfil" href="#">Login</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="mt-5 container text-center ">
+          <section class="row  " id="sectionFormLogin">
+              <article class="col-lg-8 col-md-8 col-sm-12">
+                 <!-- ===========arreglar imagen en css para que sea responsive============== -->
+                  <img class="w-100" src="/img/img-reg2.jpg" alt="">
+              </article>
+              <article class="col-lg-4 col-md-4 col-sm-12 ">
+                  <form class="" id="formLogin">
+                      <div class="row">
+                          <div class="mt-4 mb-2">
+                              <input type="text" class="form-control" id="nombreUsuario" placeholder="Ingrese su nombre de usuario" aria-label="Nombre">
+                            </div>
+                            <div class="my-2">
+                              <input type="password" class="form-control" placeholder="Ingrese su contrasena" id="passwordUsuario">
+                            </div>
+                            <div class="mt-4  d-flex justify-content-start col-lg-4 col-md-4 col-sm-12">
+                            <button type="submit" class="btn btn-dark ">Submit</button>
+                            </div>
+                            <div class="pt-1 col-lg-8 col-md-8 col-sm-12 text-start">
+                              <p class="letraChica text-danger" id="errores">  </p>
+                            </div>
+                        </div>
+                    </form>
+              </article>
+          </section>
+          <div class="esconderElemento" id="perfilDeUsuario">
+            <h1>PERFIL DE USUARIO</h1>
+            <div id="parrafo">
+            </div>
+            <div>
+              <button type="btn" class="btn btn-dark" id="btnDeslogear">Deslogear</button>
+            </div>
+          </div>
+          
+      </main>
+      <footer class="bg-light text-secondary mt-2  letraChica fixed-bottom">
+        <hr>
+        <div class="container">
+           
+          <!-- ======DIVIDIENDO FOOTER EN  COLUMNAS===== -->
+          <div class="row">
+            <div
+              class="
+                col-sm-12 col-md-3 col-lg-3
+                text-center
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="d-flex flex-column text-start">
+                <h6 class="mx-0">Navegacion:</h6>
+                <a class="text-dark claseLinksFooter ms-3 my-1" href="#"
+                  >Inicio</a
+                >
+                <a class="text-dark claseLinksFooter ms-3 my-1" href="#"
+                  >Administracion</a
+                >
+                <a class="text-dark claseLinksFooter ms-3 my-1" href="#"
+                  >Sobre Nosotros</a
+                >
+                <a class="text-dark claseLinksFooter ms-3 my-1" href="#"
+                  >Contacto</a
+                >
+                <h6 class="mx-0 mt-1">Administra tu cuenta:</h6>
+                <a class="text-dark claseLinksFooter ms-3 my-1" href="#"
+                  >Registro</a
+                >
+                <a class="text-dark claseLinksFooter ms-3 my-1" href="#">Login</a>
+              </div>
+            </div>
+            <!-- ===========LINEA EN FOOTER============== -->
+            <div
+              class="
+                col-sm-12 col-md-1 col-lg-1
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="border border-secondary linea-footer my-3"></div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+              <p>aca va un logo</p>
+            </div>
+            <!-- ===========LINEA EN FOOTER============== -->
+            <div
+              class="
+                col-sm-12 col-md-1 col-lg-1
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="border border-secondary linea-footer my-3"></div>
+            </div>
+            <div
+              class="
+                col-sm-12 col-md-3 col-lg-3
+                text-center
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <div class="">
+                <!-- ======LINKEAR A PAGINA 404===== -->
+                <h6 class="">Siguenos en nuestras redes:</h6>
+                <a class="text-secondary" href="#"
+                  ><i class="fab fa-facebook-square fa-2x mx-2"></i
+                ></a>
+                <a class="text-secondary" href="#"
+                  ><i class="fab fa-twitter-square fa-2x mx-2"></i
+                ></a>
+                <a class="text-secondary" href="#"
+                  ><i class="fab fa-instagram-square fa-2x mx-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ===========FIN FOOTER============== -->
+      <script src="js/bootstrap.min.js"></script>
+      <script type="module" src="js/login.js"></script>
+      <script
+        src="https://kit.fontawesome.com/fa326d3c28.js"
+        crossorigin="anonymous"
+      ></script>
+  </body>
+</html>
